@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'oracle'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,13 +32,25 @@ return [
     */
 
     'connections' => [
+        'oracle' => [
+            
+    'driver' => 'oracle',
+    'tns' => '(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.25.99)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = orcl)))',
+    //'host' => '182.168.25.99',
+    //'port' => '1521',
+    'database' => '',
+    'username' => 'zanchi',
+    'password' => 'zanchi',
+    'charset' => 'AL32UTF8',
+    'prefix' => '',
+        ]
 
         /*'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],*/
-
+        /*
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -53,7 +65,7 @@ return [
             'strict' => true,
             'engine' => null,
         ]
-        /*,
+        ,
 
         'pgsql' => [
             'driver' => 'pgsql',

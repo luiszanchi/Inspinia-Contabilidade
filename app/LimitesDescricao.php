@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GrupoGasto extends Model
+class LimitesDescricao extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'grupo_gasto';
+    protected $table = 'limites_descricao';
     public $timestamps = false;
-    protected $primaryKey = 'cd_grupo_gasto';
+    protected $primaryKey = 'tp_limite';
 }

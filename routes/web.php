@@ -17,7 +17,7 @@ Route::get('/query', 'UserController@query');
 
 
 
-
+// grupo_gasto
 Route::get('/grupo_gasto/lista', 'GrupoGastoController@index');
 Route::get('/grupo_gasto/novo', 'GrupoGastoController@novo');
 Route::post('/grupo_gasto/novo/gravar', 'GrupoGastoController@gravarNovo');
@@ -26,9 +26,7 @@ Route::post('/grupo_gasto/editar/gravar', 'GrupoGastoController@gravarEditar');
 Route::get('/grupo_gasto/excluir', 'GrupoGastoController@excluir');
 Route::post('/grupo_gasto/excluir/gravar', 'GrupoGastoController@gravarExcluir');
 
-
-
-
+// meio_pag_rec
 Route::get('/meio_pag_rec/lista','MeioPagRecController@index');
 Route::get('/meio_pag_rec/novo','MeioPagRecController@novo');
 Route::post('/meio_pag_rec/novo/gravar', 'MeioPagRecController@gravarNovo');
@@ -37,4 +35,8 @@ Route::post('/meio_pag_rec/editar/gravar', 'MeioPagRecController@gravarEditar');
 Route::get('/meio_pag_rec/excluir', 'MeioPagRecController@excluir');
 Route::post('/meio_pag_rec/excluir/gravar', 'MeioPagRecController@gravarExcluir');
 
+// Gestão de Limites
+Route::get('/gestao_limites/lista','GestaoLimitesController@index');
+
+// chamadas ajax
 Route::post('/registro_rapido/gasto','RegistroRapidoController@gasto');

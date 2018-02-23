@@ -27,6 +27,14 @@
                         <span class="nav-label">Página Inicial</span>
                         <span class="fa arrow"></span>
                     </a>
+                </li>
+                {{--
+                <li>
+                    <a href="{{url('')}}">
+                        <i class="fa fa-money"></i>
+                        <span class="nav-label">Página Inicial</span>
+                        <span class="fa arrow"></span>
+                    </a>
                     <a href="{{url('grupo_gasto/lista')}}">
                         <i class="fa fa-th-large"></i>
                         <span class="nav-label">Grupo de gasto</span>
@@ -37,7 +45,21 @@
                         <span class="nav-label">Meios de Pagamento Recebimento</span>
                         <span class="fa arrow"></span>
                     </a>
+                    <a href="{{url('gestao_limites/lista')}}">
+                        <i class="fa fa-th-large"></i>
+                        <span class="nav-label">Limites</span>
+                        <span class="fa arrow"></span>
+                    </a>
 
+                </li>
+                --}}
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Tabelas</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{{url('grupo_gasto/lista')}}">Grupo de gasto</a></li>
+                        <li><a href="{{url('meio_pag_rec/lista')}}">Meios de Pagamento Recebimento</a></li>
+                        <li><a href="{{url('gestao_limites/lista')}}">Limites</a></li>
+                    </ul>
                 </li>
             </ul>
 

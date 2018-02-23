@@ -4,14 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GrupoGasto extends Model
+class SimNao extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'grupo_gasto';
+    protected $table = 'simnao';
     public $timestamps = false;
-    protected $primaryKey = 'cd_grupo_gasto';
+    protected $primaryKey = 'cd_sn';
+    
 }

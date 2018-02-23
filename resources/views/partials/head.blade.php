@@ -14,8 +14,12 @@
     <!-- Morris -->
     <link href="{{url('assets/css/plugins/morris/morris-0.4.3.min.css')}}" rel="stylesheet"/>
 
-        <!-- Toastr style -->
+	<!-- Toastr style -->
     <link href="{{url('assets/css/plugins/toastr/toastr.min.css')}}" rel="stylesheet"/>
+
+
+    <!-- FooTable -->
+    <link href="{{url('assets/css/plugins/footable/footable.core.css')}}" rel="stylesheet">
 
     <link href="{{url('assets/css/animate.css')}}" rel="stylesheet"/>
     <link href="{{url('assets/css/style.css')}}" rel="stylesheet"/>
